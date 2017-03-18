@@ -1,0 +1,7 @@
+[Fri Mar 17 05:14:47.297509 2017] [authz_core:error] [pid 26171:tid 140133240141568] [client 45.62.216.34:64097] AH01630: client denied by server configuration: /usr/local/django/Personal/MrSusanovo/
+[Fri Mar 17 05:15:14.655627 2017] [authz_core:error] [pid 26171:tid 140133223356160] [client 45.62.216.34:64112] AH01630: client denied by server configuration: /usr/local/django/Personal/MrSusanovo/
+[Fri Mar 17 05:17:42.586916 2017] [authz_core:error] [pid 26171:tid 140133164607232] [client 66.102.6.151:48380] AH01630: client denied by server configuration: /usr/local/django/Personal/MrSusanovo/
+[Fri Mar 17 05:17:42.789112 2017] [authz_core:error] [pid 26170:tid 140133351028480] [client 66.102.6.150:54959] AH01630: client denied by server configuration: /usr/local/django/Personal/MrSusanovo/, referer: http://www.google.com/search
+[Fri Mar 17 05:17:56.042166 2017] [authz_core:error] [pid 26170:tid 140133342635776] [client 45.62.216.34:64143] AH01630: client denied by server configuration: /usr/local/django/Personal/MrSusanovo/admin
+[Fri Mar 17 05:20:08.409796 2017] [authz_core:error] [pid 26170:tid 140133334243072] [client 50.117.89.222:3329] AH01630: client denied by server configuration: /usr/local/django/Personal/MrSusanovo/
+[Fri Mar 17 05:20:46.439546 2017] [authz_core:error] [pid 26375:tid 139809891165952] [client 45.62.216.34:64273] AH01630: client denied by server configuration: /usr/local/django/Personal/MrSusanovo/admin
