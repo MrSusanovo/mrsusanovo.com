@@ -1,0 +1,17 @@
+{% for col in cols %}
+<div class = "mond-col c{{col}}"></div>
+{% endfor %}
+{% for row in rows %}
+<div class = "mond-row r{{row}}"></div>
+{% endfor %}
+{% for sqr in sqrs %}
+<div class = "mond-sqr sq{{sqr.sqr}}">
+  {% if sqr.sqr == 7 %}
+  <p class="mond-mess static">{{sqr.mess}}</p>
+  <p class="mond-mess static1">{{sqr.mess1}}</p>
+  <p class="mond-mess static2">{{sqr.mess2}}</p>
+  {% else %}
+  <p class="mond-mess" style="display: none">{{sqr.mess}}</p>
+  <% endif %}
+</div>
+{% endfor %}

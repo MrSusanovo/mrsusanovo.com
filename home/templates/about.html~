@@ -1,0 +1,48 @@
+<div class="about">
+  <div class="para_bg" id="pic1" href="http://en.wikipedia.org/wiki/Gashadokuro">
+    <div class="caption">
+      <span class="border">Bingzheng Feng</span>
+    </div>
+  </div>
+  <div class="intro">
+    <p class="intro">Hope you weren't scared by the huge skeleton above.</p>
+    <p class="intro">That's one of my favourite Japanese painting 相馬の古内裏 (The old Palace of Soma).</p>
+    <p class="intro">I am Bingzheng Feng, more preferably, Tom Feng.</p>
+    <p class="intro">From University of Waterloo, major in Computer Science. </p>
+    <p class="intro">Passionate about compilers, GPU parallel programming, game development, machine learning.</p>
+    <p class="intro">But gained web skills by chance.</p>
+    </br>
+    <p class="hld" style="color: rgba(0,0,0,0);">"</p>
+  </div>
+  <div class="para_bg" id="pic2"></div>
+  <div class="intro">
+    <p class="hld" style="color: rgba(0,0,0,0);">"</p>
+    </br>
+    <p class="intro"> That's me at the Similing Buddha's open mic, Toronto. December 23rd, 2016.</p>
+    <p class="intro"> It is the first jam since I left high school, with talented music lovers(UW Alumni).</p>
+    <p class="intro">A Lifetime Learner. A Jazz Lover. An Artistic Apprentice.</p>
+    <p class="intro">That's how I expect for and classify myself.</p>
+    </br>
+    <p class="hld" style="color: rgba(0,0,0,0);">"</p>
+  </div>
+  <div class="para_bg" id="pic3"></div>
+  <div class="intro">
+    <p class="hld" style="color: rgba(0,0,0,0);">"</p>
+    </br>
+    <p class="intro"> About this website. The Design was inspired by Nicholas Allan Cope. </p>
+    <p class="intro"> The above picture is one of his masterpiece.</p>
+    <p class="intro"> His personal site was kinda shocking to me. It is more than well-designed.</p>
+    <p class="intro"> Only one page with a main menu, displaying his works in a totally black background.</p>
+    <p class="intro"> Shocked by a sense of narrative, I applied his pattern on this site.</p>
+    <p class="intro"> It is really a naive approach. For Nicholas, his pictrues was everything.</p>
+    <p class="intro">Any other "design" would only make it worse.</p>
+    <p class="intro"> But I have NOTHING here LOL.</p>
+    </br>
+    <p class="hld" style="color: rgba(0,0,0,0);">"</p>
+  </div>
+  <div class="para_bg" id="pic4">
+    <div class="caption">
+      <span class="border">Now menu works</span>
+    </div>
+  </div>
+

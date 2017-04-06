@@ -1,0 +1,71 @@
+
+body,html{
+	height: 100%;
+	margin: 0;
+	color: rgba(0,0,0,1);
+	background-color: rgba(0,0,0,1);
+}
+
+.border{
+	color: rgba(255,255,255,1);
+	font-size: 36px;
+}
+
+.para_bg {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption{
+	border-radius: 5pt;
+	background-color: rgba(12,12,12,0.5);
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 50%;
+	width: %100;
+	text-align: center;
+	color: rgba(0,0,0,1);
+}
+
+.h3_intro{
+	background-color: rgba(0,0,0,1);
+	text-align: center;
+	color: rgba(244,244,244,1);
+}
+
+div .intro{
+	padding: 50px, 80px, 50px, 80px;
+}
+
+.intro {
+	position: relative;
+	color: rgba(244,244,244,1);
+	background-color: rgba(0,0,0,1);
+	text-align: center;
+}
+
+#pic1 {
+	background-image: url("konarei.jpg");
+	min-height: 100%;
+}
+
+#pic2 {
+	background-image: url("mesa.JPG");
+	min-height: 400px;
+}
+
+#pic3 {
+	background-image: url("nac.jpg");
+	min-height: 400px;
+}
+
+@media only screen and (max-device-width: 1024px){
+	.para_bg{
+		background-attachment: scroll;
+	}
+}
