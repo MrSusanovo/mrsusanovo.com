@@ -1,3 +1,24 @@
+@keyframes fade_in{
+    from{
+	opacity: 0;
+	filter: alpha(opacity=0);
+    }to{
+	opacity: 1;
+	filter: alpha(opacity=100);
+    }
+}
+
+@keyframes fade_out{
+    from{
+	opacity: 1;
+	filter: alpha(opacity=100);
+    }to{
+	opacity: 0;
+	filter: alpha(opacity=0);
+    }
+}
+
+
 .mond-col{
 	position: fixed;
 	background-color: rgba(244,244,244,1);
@@ -66,34 +87,69 @@
 	margin-left: 1320px;
 }
 
-.static{
+#dmess0{
+    color: rgba(32,32,32,1);
+    font-size: 26px;
+    top: 46%;
+    left: 6%;
+    right: 6%;
+}
+
+#dmess1{
+    font-size: 21px;
+    left: 4%;
+    right: 4%;
+    top: 17%;
+}
+
+#dmess2{
+    font-size: 23px;
+    left: 17%;
+    top: 32%;
+}
+
+#dmess6{
+    font-size: 23px;
+    left: 10%;
+    right: 10%;
+    top: 17%;
+}
+
+.mond-mess{
     position: absolute;
     color: rgba(244,244,244,1);
     font-family: "Anonymous Pro", monospace;
-    font-size: 42px;
+    font-size: 36px;
     text-align: center;
+}
+
+.mond-mess.dynamic{
+    animation: 0.5s fade_in;
+}
+
+.mond-mess.dynamic.ng-hide{
+    animation: 0.5s fade_out;
+}
+
+.static{
+    color: rgba(244,244,244,1);
+    font-size: 42px;
     left: 15%;
     right: 15%;
     top: 20%;
 }
 
 .static1{
-    position: absolute;
     color: rgba(244,244,244,1);
-    font-family: "Anonymous Pro", monospace;
     font-size: 26px;
-    text-align: center;
     left: 10%;
     right: 10%;
     top : 40%;
 }
 
 .static2{
-    position: absolute;
     color: rgba(244,244,244,1);
-    font-family: "Anonymous Pro", monospace;
     font-size: 20px;
-    text-align: center;
     left: 7%;
     right: 7%;
     top: 70%;
