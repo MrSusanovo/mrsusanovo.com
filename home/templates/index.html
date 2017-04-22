@@ -9,15 +9,13 @@
       <link rel="stylesheet" type="text/css" href="{% static style %}"/>
       {% endfor %}
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-animate.js"></script>
       <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-93971185-1', 'auto');
 	ga('send', 'pageview');
 	</script>
 
     </head>
-    <body class="main-body" ng-app="mondrian" ng-contoller="mondCtrl">
+    <body class="main-body">
       <div class = "content">
 	{% for col in cols %}
 	<div class="mond-col c{{col}}"></div>
@@ -26,13 +24,14 @@
 	<div class="mond-row r{{row}}"></div>
 	{% endfor %}
 	{% for sqr in sqrs %}
-	<div class="mond-sqr sq{{sqr.sqr}}" ng-mouseover="visible{{sqr.sqr}}=true" ng-mouseleave="visible{{sqr.sqr}}=false">
+	<div class="mond-sqr sq{{sqr.sqr}}" id="mondsq{{sqr.sqr}}">
 	  {% if sqr.sqr == 7 %}
-	  <p class="mond-mess static">{{sqr.mess}}</p>
-	  <p class="mond-mess static1">{{sqr.mess1}}</p>
-	  <p class="mond-mess static2">{{sqr.mess2}}</p>
+	  <p class="mond-mess static s0">{{sqr.mess}}</p>
+	  <p class="mond-mess dynamic"></p>
+	  <p class="mond-mess static s1">{{sqr.mess1}}</p>
+	  <p class="mond-mess static s2">{{sqr.mess2}}</p>
 	  {% else %}
-	  <p class="mond-mess dynamic" id="dmess{{sqr.sqr}}"ng-show="visible{{sqr.sqr}}">{{sqr.mess}}</p>
+	  <p class="mond-mess store" style="display: none;">{{sqr.mess}}</p>
 	  {% endif %}
 	</div>
 	{% endfor %}

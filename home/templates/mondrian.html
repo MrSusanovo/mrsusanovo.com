@@ -5,13 +5,14 @@
 <div class = "mond-row r{{row}}"></div>
 {% endfor %}
 {% for sqr in sqrs %}
-<div class = "mond-sqr sq{{sqr.sqr}}" ng-mouseover="visible{{sqr.sqr}}=true" ng-mouseleave="visible{{sqr.sqr}}=false">
+<div class = "mond-sqr sq{{sqr.sqr}}" id="mondsq{{sqr.sqr}}">
   {% if sqr.sqr == 7 %}
-  <p class="mond-mess static">{{sqr.mess}}</p>
-  <p class="mond-mess static1">{{sqr.mess1}}</p>
-  <p class="mond-mess static2">{{sqr.mess2}}</p>
+  <p class="mond-mess static s0">{{sqr.mess}}</p>
+  <p class="mond-mess dynamic"></p>
+  <p class="mond-mess static s1">{{sqr.mess1}}</p>
+  <p class="mond-mess static s2">{{sqr.mess2}}</p>
   {% else %}
-  <p class="mond-mess dynamic" id="dmess{{sqr.sqr}}" ng-show="visible{{sqr.sqr}}">{{sqr.mess}}</p>
+  <p class="mond-mess store" style="display: none;">{{sqr.mess}}</p>
   {% endif %}
 </div>
 {% endfor %}

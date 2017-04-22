@@ -18,7 +18,25 @@
     }
 }
 
+@keyframes shadow{
+    from{
+	opacity: 1;
+	filter: alpha(opacity=100);
+    }to{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+    }
+}
 
+@keyframes unshadow{
+    from{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+    }to{
+	opacity: 1;
+	filter: alpha(opacity=100);
+    }
+}
 .mond-col{
 	position: fixed;
 	background-color: rgba(244,244,244,1);
@@ -87,6 +105,7 @@
 	margin-left: 1320px;
 }
 
+/*
 #dmess0{
     color: rgba(32,32,32,1);
     font-size: 26px;
@@ -115,6 +134,7 @@
     top: 17%;
 }
 
+*/
 .mond-mess{
     position: absolute;
     color: rgba(244,244,244,1);
@@ -124,14 +144,23 @@
 }
 
 .mond-mess.dynamic{
+    font-size: 26px;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+}
+
+/*
+.mond-mess.dynamic{
     animation: 0.5s fade_in;
 }
 
 .mond-mess.dynamic.ng-hide{
     animation: 0.5s fade_out;
 }
+*/
 
-.static{
+.s0{
     color: rgba(244,244,244,1);
     font-size: 42px;
     left: 15%;
@@ -139,16 +168,14 @@
     top: 20%;
 }
 
-.static1{
-    color: rgba(244,244,244,1);
+.s1{
     font-size: 26px;
     left: 10%;
     right: 10%;
     top : 40%;
 }
 
-.static2{
-    color: rgba(244,244,244,1);
+.s2{
     font-size: 20px;
     left: 7%;
     right: 7%;
@@ -194,8 +221,19 @@
 }
 
 .mond-sqr{
-	position: fixed;
-	background-color: rgba(144,244,244,0.65);
+    opacity: 1;
+    position: fixed;
+    background-color: rgba(144,244,244,0.65);
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+}
+
+.mond-sqr:hover{
+    opacity: 0.5;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+    cursor: hand;
+    cursor: pointer;
 }
 
 .sq0{
